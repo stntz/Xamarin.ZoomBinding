@@ -22,6 +22,7 @@
     <remove-node  path="/api/package[@name='com.zipow.videobox.ptapp']/class[@name='ABContactsCache.LoadContactsTask']"/>
      <remove-node path="/api/package[@name='com.zipow.videobox.view']/class[@name='MeetingReactionView']"/>
     <remove-node path="/api/package[@name='com.zipow.videobox.view.sip']/class[@name='ContactPBXNumberAdapter']"/>
+     <remove-node path="/api/package[@name='com.zipow.videobox.view']/class[@name='IMDirectoryAdapter']"/>
     
     
     <attr path="/api/package[@name='com.zipow.videobox.ptapp.delegate']" name="managedName">Com.Zipow.Videobox.Ptapp.ZoomDelegate</attr>
@@ -72,5 +73,7 @@
     
     <attr path="/api/package[@name='us.google.protobuf']/interface[@name='MessageLite.Builder']/method[@name='mergeFrom']" name="managedReturn">Java.Lang.Object</attr>
     <attr path="/api/package[@name='us.google.protobuf']/interface[@name='MessageLite.Builder']/method[@name='clone' and count(parameter)=0]" name="managedReturn">Java.Lang.Object</attr>
-
+    
+    <attr path="/api/package[@name='com.zipow.videobox.util']/interface[@name='ZMNotificationPlayer.OnPlayTimeOutListener']" name="visibility">private</attr>
+    
 </metadata>
