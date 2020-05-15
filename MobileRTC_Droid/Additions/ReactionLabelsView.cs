@@ -51,4 +51,27 @@ namespace Com.Zipow.Videobox.View
             }
         }
     }
+
+
+    public partial class ChatTip
+    {
+        public partial class ChatTipComparator
+        {
+            public int Compare(Java.Lang.Object lhs, Java.Lang.Object rhs)
+            {
+                return Compare((Com.Zipow.Videobox.View.ChatTip)lhs, (Com.Zipow.Videobox.View.ChatTip)rhs);                
+            }
+        }
+    }
+
+    public partial class MessageTip
+    {
+        public partial class MessageTipComparator
+        {
+            public int Compare(Java.Lang.Object lhs, Java.Lang.Object rhs)
+            {
+                return Compare((Com.Zipow.Videobox.View.MessageTip)lhs, (Com.Zipow.Videobox.View.MessageTip)rhs);
+            }
+        }
+    }
 }

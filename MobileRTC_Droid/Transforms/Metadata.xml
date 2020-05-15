@@ -8,21 +8,29 @@
   <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
   -->
     
-     <remove-node path="/api/package[@name='sdk.android.api.org.webrtc']" />
-    
-    
-    
-   <remove-node path="/api/package[@name='com.zipow.videobox.ptapp']/class[@name='MeetingInfoProtos']"/>
-    <remove-node path="/api/package[@name='us.google.protobuf']/class[@name='GeneratedMessageLite']"/>
-    <remove-node path="/api/package[@name='us.google.protobuf']/class[@name='UnmodifiableLazyStringList']"/>
     <remove-node path="/api/package[@name='us.google.protobuf']/class[@name='LazyStringArrayList']"/>
+    <remove-node path="/api/package[@name='us.google.protobuf']/class[@name='UnmodifiableLazyStringList']"/>
+    <remove-node path="/api/package[@name='us.google.protobuf']/class[@name='GeneratedMessageLite']"/>
+    <remove-node path="/api/package[@name='us.google.protobuf']/class[@name='AbstractMessageLite']"/>
     
-    <remove-node path="/api/package[@name='com.zipow.videobox.view.mm']/interface[@name='OnContentFileOperatorListener']"/>
+    
+    <remove-node path="/api/package[@name='com.zipow.videobox.confapp']/class[@name='ConfAppProtos']"/>
+    <remove-node path="/api/package[@name='com.zipow.videobox.ptapp']/class[@name='PTAppProtos']"/>
+    <remove-node path="/api/package[@name='com.zipow.videobox.ptapp']/class[@name='MeetingInfoProtos']"/>
+  
     
     <remove-node  path="/api/package[@name='com.zipow.videobox.ptapp']/class[@name='ABContactsCache.LoadContactsTask']"/>
-     <remove-node path="/api/package[@name='com.zipow.videobox.view']/class[@name='MeetingReactionView']"/>
     <remove-node path="/api/package[@name='com.zipow.videobox.view.sip']/class[@name='ContactPBXNumberAdapter']"/>
-     <remove-node path="/api/package[@name='com.zipow.videobox.view']/class[@name='IMDirectoryAdapter']"/>
+    <remove-node path="/api/package[@name='com.zipow.videobox.view']/class[@name='IMDirectoryAdapter']"/>
+    
+    <remove-node path="/api/package[@name='com.zipow.videobox.fragment']/class[@name='SettingAboutFragment']"/>
+    <remove-node path="/api/package[@name='com.zipow.videobox.view.sip']/class[@name='SipSwitchOutputAudioDialog']"/>
+    
+    <remove-node path="/api/package[@name='com.zipow.videobox.dialog']/class[@name='LiveStreamDialog']"/>
+    <remove-node path="/api/package[@name='com.zipow.videobox.dialog']/class[@name='SwitchOutputAudioDialog']"/>
+    <remove-node path="/api/package[@name='com.zipow.videobox.view.mm']/class[@name='PhoneLabelFragment']"/>
+    <remove-node path="/api/package[@name='com.zipow.videobox.fragment']/class[@name='AddrBookItemDetailsFragment']"/>
+    <remove-node path="/api/package[@name='com.zipow.videobox.fragment']/class[@name='AddrBookItemDetailsFragment']"/>
     
     
     <attr path="/api/package[@name='com.zipow.videobox.ptapp.delegate']" name="managedName">Com.Zipow.Videobox.Ptapp.ZoomDelegate</attr>
@@ -46,7 +54,8 @@
     <attr path="/api/package[@name='com.zipow.videobox.view.sip']/class[@name='PhonePBXVoiceMailHistoryAdapter']/method[@name='getItemById' and count(parameter)=1 and parameter[1][@type='java.lang.String']]" name="managedReturn">Java.Lang.Object</attr>
     <attr path="/api/package[@name='com.zipow.videobox.view']/class[@name='WaitingListAdapter']/method[@name='getItem' and count(parameter)=1 and parameter[1][@type='int']]" name="managedReturn">Java.Lang.Object</attr>
     <attr path="/api/package[@name='com.zipow.videobox.view.mm']/class[@name='MMNotificationExceptionGroupListView.MMNotificationExceptionGroupAdapter']/method[@name='getItem' and count(parameter)=1 and parameter[1][@type='int']]" name="managedReturn">Java.Lang.Object</attr>
-        
+    <attr path="/api/package[@name='com.zipow.videobox.fragment.mm']/class[@name='MMInvitePhoneContactsFragment.ContactAdapter']/method[@name='getItem' and count(parameter)=1 and parameter[1][@type='int']]" name="managedReturn">Java.Lang.Object</attr>    
+    
     <attr path="/api/package[@name='com.zipow.videobox.share']/class[@name='ShareView']/method[@name='onLayout' and count(parameter)=5 and parameter[1][@type='boolean'] and parameter[2][@type='int'] and parameter[3][@type='int'] and parameter[4][@type='int'] and parameter[5][@type='int']]" name="visibility">protected</attr>
     <attr path="/api/package[@name='com.zipow.videobox.view.photopicker']/class[@name='TouchImageView']" name="managedName">NewTouchImageView</attr>
     
@@ -57,6 +66,7 @@
     
     <attr path="/api/package[@name='com.zipow.videobox.view.sip']/class[@name='PBXDirectorySearchAdapter']/method[@name='getItem' and count(parameter)=1 and parameter[1][@type='int']]" name="managedReturn">Java.Lang.Object</attr>
      <attr path="/api/package[@name='com.zipow.videobox.view.mm']/class[@name='MMContactsAppAdapter']/method[@name='getItem' and count(parameter)=1 and parameter[1][@type='int']]" name="managedReturn">Java.Lang.Object</attr>
+    <attr path="/api/package[@name='com.zipow.videobox.fragment']/class[@name='PAttendeeListActionDialog.OptionListAdapter']/method[@name='getItem' and count(parameter)=1 and parameter[1][@type='int']]" name="managedReturn">Java.Lang.Object</attr>
     
     <attr path="/api/package[@name='com.zipow.videobox.view.mm.contentfile']/class[@name='ContentFileChatListAdapter']/method[@name='onCreateViewHolder' and count(parameter)=2 and parameter[1][@type='android.view.ViewGroup'] and parameter[2][@type='int']]" name="managedReturn">AndroidX.RecyclerView.Widget.RecyclerView.ViewHolder</attr>
     <attr path="/api/package[@name='com.zipow.annotate.annoMultiPage']/class[@name='AnnoMultiPageAdapter']/method[@name='onCreateViewHolder' and count(parameter)=2 and parameter[1][@type='android.view.ViewGroup'] and parameter[2][@type='int']]" name="managedReturn">AndroidX.RecyclerView.Widget.RecyclerView.ViewHolder</attr>
@@ -71,9 +81,16 @@
    -->
     
     
-    <attr path="/api/package[@name='us.google.protobuf']/interface[@name='MessageLite.Builder']/method[@name='mergeFrom']" name="managedReturn">Java.Lang.Object</attr>
-    <attr path="/api/package[@name='us.google.protobuf']/interface[@name='MessageLite.Builder']/method[@name='clone' and count(parameter)=0]" name="managedReturn">Java.Lang.Object</attr>
-    
     <attr path="/api/package[@name='com.zipow.videobox.util']/interface[@name='ZMNotificationPlayer.OnPlayTimeOutListener']" name="visibility">private</attr>
     
+    <attr path="/api/package[@name='sdk.android.api.org.webrtc']/class[@name='EglBase14']/method[@name='getEglBaseContext' and count(parameter)=0]" name="managedReturn">Sdk.Android.Api.Org.Webrtc.EglBase.IContext</attr>
+    
+    <attr path="/api/package[@name='com.zipow.videobox.view']/interface[@name='MeetingReactionView.OnSelectListener']/method[@name='onSelectMeetingReaction' and count(parameter)=1 and parameter[1][@type='java.lang.String']]" name="managedName">OnSelectMeetingReaction2</attr>
+    <attr path="/api/package[@name='com.zipow.videobox.view.mm']/interface[@name='OnContentFileOperatorListener']/method[@name='onZoomFileClick' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.util.List&lt;java.lang.String&gt;']]" name="managedName">OnZoomFileClick2</attr>
+    <attr path="/api/package[@name='com.zipow.videobox.view.mm']/class[@name='MMContentSearchFilesListView']/method[@name='onZoomFileClick' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.util.List&lt;java.lang.String&gt;']]" name="managedName">OnZoomFileClick2</attr>
+    <attr path="/api/package[@name='com.zipow.videobox.view.mm']/class[@name='MMContentFragment']/method[@name='onZoomFileClick' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.util.List&lt;java.lang.String&gt;']]" name="managedName">OnZoomFileClick2</attr>
+    <attr path="/api/package[@name='com.zipow.videobox.view.mm']/class[@name='MMContentSearchFragment']/method[@name='onZoomFileClick' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.util.List&lt;java.lang.String&gt;']]" name="managedName">OnZoomFileClick2</attr>
+    <attr path="/api/package[@name='com.zipow.videobox.view']/class[@name='MoreTip']/method[@name='onSelectMeetingReaction' and count(parameter)=1 and parameter[1][@type='java.lang.String']]" name="managedName">OnSelectMeetingReaction2</attr>
+    <attr path="/api/package[@name='com.zipow.videobox.fragment']/class[@name='IMSessionSearchFragment']/method[@name='onZoomFileClick' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.util.List&lt;java.lang.String&gt;']]" name="managedName">OnZoomFileClick2</attr>
+    <attr path="/api/package[@name='com.zipow.videobox.view.mm']/class[@name='MMSessionContentsFragment']/method[@name='onZoomFileClick' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.util.List&lt;java.lang.String&gt;']]" name="managedName">OnZoomFileClick2</attr>
 </metadata>
