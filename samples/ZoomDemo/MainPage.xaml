@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="ZoomDemo.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewmodel="clr-namespace:ZoomDemo.ViewModels"
+    mc:Ignorable="d">
+    <ContentPage.BindingContext>
+        <viewmodel:MainViewModel />
+    </ContentPage.BindingContext>
+    <StackLayout>
+        <!--  Place new controls here  -->
+        <Entry Placeholder="Meeting ID" Text="{Binding MeetingID}" />
+        <Entry Placeholder="Meeting Password" Text="{Binding MeetingPassword}" />
+        <Entry Placeholder="Display Name" Text="{Binding DisplayName}" />
+        <Button Command="{Binding JoinMeetingCommand}" Text="Join Meeting" />
+        <Button Command="{Binding EndMeetingCommand}" Text="End Meeting" />
+    </StackLayout>
+</ContentPage>
