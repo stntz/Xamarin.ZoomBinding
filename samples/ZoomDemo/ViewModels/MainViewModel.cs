@@ -9,7 +9,6 @@ namespace ZoomDemo.ViewModels
     public class MainViewModel
     {
         IZoomService zoomService;
-
         public MainViewModel()
         {
             zoomService = DependencyService.Get<IZoomService>();
