@@ -35,6 +35,10 @@ namespace ZoomDemo.iOS.Platform
                 authService.ClientSecret = appSecret;
 
                 authService.SdkAuth();
+
+                //Only if you are using screen sharing (Broadcast Upload Extension)
+
+                mobileRTC.SetAppGroupsName("group.com.syndew.zoomdemo");
             }
         }
 

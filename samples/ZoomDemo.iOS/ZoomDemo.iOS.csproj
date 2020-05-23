@@ -137,6 +137,16 @@
       <Project>{CA661E6B-BCDF-4EC2-8E6C-045702BD2EA0}</Project>
       <Name>MobileRTC_iOS</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ZoomDemoScreenShare\ZoomDemoScreenShare.csproj">
+      <IsAppExtension>true</IsAppExtension>
+      <Project>{0EADC8B6-D2ED-4178-A026-704B725377A6}</Project>
+      <Name>ZoomDemoScreenShare</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZoomDemoScreenShareUI\ZoomDemoScreenShareUI.csproj">
+      <IsAppExtension>true</IsAppExtension>
+      <Project>{12908F08-7C24-46E8-921A-F2354C742D77}</Project>
+      <Name>ZoomDemoScreenShareUI</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Platform\" />
