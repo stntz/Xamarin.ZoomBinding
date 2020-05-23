@@ -20,8 +20,7 @@ namespace ZoomDemo.Droid.Platform
                 AppKey = appKey,
                 AppSecret = appSecret
             };
-
-            zoomSDK.Initialize(Android.App.Application.Context, this, zoomInitParams);
+            zoomSDK.Initialize(Android.App.Application.Context, this, zoomInitParams);           
         }
 
         public bool IsInitialized()

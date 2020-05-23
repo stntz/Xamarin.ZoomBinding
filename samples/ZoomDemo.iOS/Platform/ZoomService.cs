@@ -65,6 +65,17 @@ namespace ZoomDemo.iOS.Platform
             }
         }
 
+        //void listMeeting()
+        //{
+        //    if (IsInitialized())
+        //    {
+        //        var premeetingService = mobileRTC.GetPreMeetingService();
+        //        premeetingService.Delegate = new MobilePreDelegate();
+
+        //        var listSuccess = premeetingService.ListMeeting;
+        //    }
+        //}
+
         public void LeaveMeeting(bool endMeeting = false)
         {
             if (IsInitialized())
@@ -81,5 +92,30 @@ namespace ZoomDemo.iOS.Platform
                 Console.WriteLine($"Another Log from our iOS counterpart: {returnValue}");
             }
         }
+
+
+        //class MobilePreDelegate : MobileRTCPremeetingDelegate
+        //{
+        //    public override void SinkDeleteMeeting(PreMeetingError result)
+        //    {
+        //        throw new NotImplementedException();
+        //    }
+
+        //    public override void SinkEditMeeting(PreMeetingError result, ulong uniquedID)
+        //    {
+        //        throw new NotImplementedException();
+        //    }
+
+        //    public override void SinkListMeeting(PreMeetingError result, NSObject[] array)
+        //    {
+        //        //result == 
+        //        //var newList 
+        //    }
+
+        //    public override void SinkSchedultMeeting(PreMeetingError result, ulong uniquedID)
+        //    {
+        //        throw new NotImplementedException();
+        //    }
+        //}
     }
 }

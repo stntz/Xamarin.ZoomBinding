@@ -1198,11 +1198,7 @@ namespace Zoomios
         // @property (retain, nonatomic) NSString * _Nonnull userName;
         [Export("userName", ArgumentSemantic.Retain)]
         string UserName { get; set; }
-
-        // @property (retain, nonatomic) NSString * _Nonnull emailAddress;
-        [Export("emailAddress", ArgumentSemantic.Retain)]
-        string EmailAddress { get; set; }
-
+        
         // @property (retain, nonatomic) NSString * _Nonnull avatarPath;
         [Export("avatarPath", ArgumentSemantic.Retain)]
         string AvatarPath { get; set; }
@@ -2422,6 +2418,10 @@ namespace Zoomios
         // -(void)enableShowMyMeetingElapseTime:(BOOL)enable;
         [Export("enableShowMyMeetingElapseTime:")]
         void EnableShowMyMeetingElapseTime(bool enable);
+
+        // -(void)hideReactionsOnMeetingUI:(BOOL)hidden;
+        [Export("hideReactionsOnMeetingUI:")]
+        void HideReactionsOnMeetingUI(bool hidden);
 
         // -(void)prePopulateWebinarRegistrationInfo:(NSString * _Nonnull)email username:(NSString * _Nonnull)username;
         [Export("prePopulateWebinarRegistrationInfo:username:")]
