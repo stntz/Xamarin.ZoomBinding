@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using ZoomDemo.Pages;
 
 namespace ZoomDemo
 {
@@ -17,5 +18,11 @@ namespace ZoomDemo
         {
             InitializeComponent();
         }
+
+        void LoginPage_Clicked(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new LoginPage());
+        }
+
     }
 }

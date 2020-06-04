@@ -44,28 +44,28 @@ namespace Com.Zipow.Videobox.View.MM
 
 
 
-    public partial class MMContentSearchFilesAdapter
-    {
-        public partial class ContentFileComparator
-        {
-            public unsafe int Compare(Java.Lang.Object lhs, Java.Lang.Object rhs)
-            {
-                const string __id = "compare.(Lcom/zipow/videobox/view/mm/MMContentSearchFilesAdapter$DisplayItem;Lcom/zipow/videobox/view/mm/MMContentSearchFilesAdapter$DisplayItem;)I";
-                try
-                {
-                    JniArgumentValue* __args = stackalloc JniArgumentValue[2];
-                    __args[0] = new JniArgumentValue((lhs == null) ? IntPtr.Zero : ((global::Java.Lang.Object)lhs).Handle);
-                    __args[1] = new JniArgumentValue((rhs == null) ? IntPtr.Zero : ((global::Java.Lang.Object)rhs).Handle);
-                    var __rm = _members.InstanceMethods.InvokeVirtualInt32Method(__id, this, __args);
-                    return __rm;
-                }
-                finally
-                {
-                }
-            }
+    //public partial class MMContentSearchFilesAdapter
+    //{
+    //    public partial class ContentFileComparator
+    //    {
+    //        public unsafe int Compare(Java.Lang.Object lhs, Java.Lang.Object rhs)
+    //        {
+    //            const string __id = "compare.(Lcom/zipow/videobox/view/mm/MMContentSearchFilesAdapter$DisplayItem;Lcom/zipow/videobox/view/mm/MMContentSearchFilesAdapter$DisplayItem;)I";
+    //            try
+    //            {
+    //                JniArgumentValue* __args = stackalloc JniArgumentValue[2];
+    //                __args[0] = new JniArgumentValue((lhs == null) ? IntPtr.Zero : ((global::Java.Lang.Object)lhs).Handle);
+    //                __args[1] = new JniArgumentValue((rhs == null) ? IntPtr.Zero : ((global::Java.Lang.Object)rhs).Handle);
+    //                var __rm = _members.InstanceMethods.InvokeVirtualInt32Method(__id, this, __args);
+    //                return __rm;
+    //            }
+    //            finally
+    //            {
+    //            }
+    //        }
 
-        }
-    }
+    //    }
+    //}
 
     public partial class MMSelectSessionAndBuddyListView
     {

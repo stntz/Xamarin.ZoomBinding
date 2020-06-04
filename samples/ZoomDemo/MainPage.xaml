@@ -17,5 +17,9 @@
         <Entry Placeholder="Display Name" Text="{Binding DisplayName}" />
         <Button Command="{Binding JoinMeetingCommand}" Text="Join Meeting" />
         <Button Command="{Binding EndMeetingCommand}" Text="End Meeting" />
+        <Button
+            x:Name="LoginPage"
+            Clicked="LoginPage_Clicked"
+            Text="Login and Meetings" />
     </StackLayout>
 </ContentPage>

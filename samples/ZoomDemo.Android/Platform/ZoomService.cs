@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using Android.App;
+using Java.Lang;
 using US.Zoom.Sdk;
 using Xamarin.Forms;
 using ZoomDemo.Droid.Platform;
@@ -8,10 +11,10 @@ using ZoomDemo.Interfaces;
 [assembly: Dependency(typeof(ZoomService))]
 namespace ZoomDemo.Droid.Platform
 {
-    public class ZoomService : Java.Lang.Object, IZoomService, IZoomSDKInitializeListener
+    public class ZoomService : Java.Lang.Object, IZoomService, IZoomSDKInitializeListener, IPreMeetingServiceListener
     {
         ZoomSDK zoomSDK;
-
+        static TaskCompletionSource<object> meetingListSource;
         public void InitZoomLib(string appKey, string appSecret)
         {
             zoomSDK = ZoomSDK.Instance;
@@ -49,6 +52,61 @@ namespace ZoomDemo.Droid.Platform
                 var meetingService = zoomSDK.MeetingService;
                 meetingService.LeaveCurrentMeeting(endMeeting);
             }
+        }
+
+        public Task<object> ListMeeting()
+        {
+            if (IsInitialized())
+            {
+                if (meetingListSource != null)
+                    return null;
+
+                var preMeeting = zoomSDK.PreMeetingService;
+                preMeeting.AddListener(this);
+                meetingListSource = new TaskCompletionSource<object>();
+                _ = preMeeting.ListMeeting();              
+
+                return meetingListSource.Task;
+            }
+            return null;
+        }
+
+        public bool LoginToZoom(string email, string password, bool rememberMe = true)
+        {
+            if (IsInitialized())
+            {
+                var loginInt = zoomSDK.LoginWithZoom(email, password);
+                return loginInt == 0;
+            }
+            return false;
+        }
+
+        public void OnDeleteMeeting(int p0)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void OnListMeeting(int p0, IList<Long> p1)
+        {
+            if(p0 == 0)
+            {
+                meetingListSource.SetResult(p1);
+            }
+            else
+            {
+                meetingListSource.SetResult(null);
+            }
+            
+        }
+
+        public void OnScheduleMeeting(int p0, long p1)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void OnUpdateMeeting(int p0, long p1)
+        {
+            throw new NotImplementedException();
         }
 
         public void OnZoomAuthIdentityExpired()

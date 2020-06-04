@@ -14,14 +14,16 @@ namespace ZoomDemo.ViewModels
             zoomService = DependencyService.Get<IZoomService>();
             zoomService.InitZoomLib(Constants.AppKey, Constants.AppSecret);
             JoinMeetingCommand = new Command(JoinAction);
-            EndMeetingCommand = new Command(EndMeetingAction);
+            EndMeetingCommand = new Command(EndMeetingAction);           
         }
+               
 
         public string MeetingID { get; set; }
         public string MeetingPassword { get; set; }
         public string DisplayName { get; set; }
         public ICommand JoinMeetingCommand { get; }
         public ICommand EndMeetingCommand { get; }
+       
 
         void JoinAction()
         {

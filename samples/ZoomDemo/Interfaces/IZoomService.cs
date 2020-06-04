@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Threading.Tasks;
+
 namespace ZoomDemo.Interfaces
 {
     public interface IZoomService
@@ -10,5 +12,7 @@ namespace ZoomDemo.Interfaces
 
         void JoinMeeting(string meetingID, string meetingPassword, string displayName = "Zoom Demo");
         void LeaveMeeting(bool endMeeting = false);
+        bool LoginToZoom(string email, string password, bool rememberMe = true);
+        Task<object> ListMeeting();
     }
 }
