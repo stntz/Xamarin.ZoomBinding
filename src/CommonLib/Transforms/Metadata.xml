@@ -10,7 +10,7 @@
     
     
 
-    <attr path="/api/package[@name='us.zoom.androidlib.RecyclerView']/interface[@name='IRecyclerListener']"
+    <attr path="/api/package[@name='us.zoom.androidlib']/interface[@name='IRecyclerListener']"
           name="argsType">RecyclerEventArgs</attr>
     
     <attr path="/api/package[@name='us.zoom.androidlib.app']/class[@name='ZMFileListBaseAdapter']/method[@name='getItem' and count(parameter)=1 and parameter[1][@type='int']]" name="managedReturn">Java.Lang.Object</attr>
