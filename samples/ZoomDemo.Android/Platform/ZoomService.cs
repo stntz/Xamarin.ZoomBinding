@@ -11,7 +11,7 @@ using ZoomDemo.Interfaces;
 [assembly: Dependency(typeof(ZoomService))]
 namespace ZoomDemo.Droid.Platform
 {
-    public class ZoomService : Java.Lang.Object, IZoomService, IZoomSDKInitializeListener, IPreMeetingServiceListener
+    public class ZoomService : Java.Lang.Object, IZoomService, IZoomSDKInitializeListener //, IPreMeetingServiceListener
     {
         ZoomSDK zoomSDK;
         static TaskCompletionSource<object> meetingListSource;
@@ -36,12 +36,12 @@ namespace ZoomDemo.Droid.Platform
             if (IsInitialized())
             {
                 var meetingService = zoomSDK.MeetingService;
-                meetingService.JoinMeetingWithParams(Android.App.Application.Context, new JoinMeetingParams
+                meetingService. JoinMeetingWithParams(Android.App.Application.Context, new JoinMeetingParams
                 {
                     MeetingNo = meetingID,
                     Password = meetingPassword,
                     DisplayName = displayName
-                });
+                }, new JoinMeetingOptions {  });
             }
         }
 
@@ -54,22 +54,22 @@ namespace ZoomDemo.Droid.Platform
             }
         }
 
-        public Task<object> ListMeeting()
-        {
-            if (IsInitialized())
-            {
-                if (meetingListSource != null)
-                    return null;
+        //public Task<object> ListMeeting()
+        //{
+        //    if (IsInitialized())
+        //    {
+        //        if (meetingListSource != null)
+        //            return null;
 
-                var preMeeting = zoomSDK.PreMeetingService;
-                preMeeting.AddListener(this);
-                meetingListSource = new TaskCompletionSource<object>();
-                _ = preMeeting.ListMeeting();              
+        //        var preMeeting = zoomSDK.PreMeetingService;
+        //        preMeeting.AddListener(this);
+        //        meetingListSource = new TaskCompletionSource<object>();
+        //        _ = preMeeting.ListMeeting();              
 
-                return meetingListSource.Task;
-            }
-            return null;
-        }
+        //        return meetingListSource.Task;
+        //    }
+        //    return null;
+        //}
 
         public bool LoginToZoom(string email, string password, bool rememberMe = true)
         {

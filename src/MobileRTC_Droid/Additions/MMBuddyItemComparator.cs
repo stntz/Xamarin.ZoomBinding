@@ -5,28 +5,28 @@ namespace Com.Zipow.Videobox.View.MM
 {
     public partial class MMBuddyItemComparator
     {
-        public int Compare(Java.Lang.Object lhs, Java.Lang.Object rhs)
-        {
-            return Compare((Com.Zipow.Videobox.View.MM.MMBuddyItem)lhs, (Com.Zipow.Videobox.View.MM.MMBuddyItem)rhs);
-        }
+        //public int Compare(Java.Lang.Object lhs, Java.Lang.Object rhs)
+        //{
+        //    return Compare((Com.Zipow.Videobox.View.MM.MMBuddyItem)lhs, (Com.Zipow.Videobox.View.MM.MMBuddyItem)rhs);
+        //}
     }
 
 
     public partial class IMAddrBookItemComparator
     {
-        public int Compare(Java.Lang.Object lhs, Java.Lang.Object rhs)
-        {
-            return Compare((Com.Zipow.Videobox.View.IMAddrBookItem)lhs, (Com.Zipow.Videobox.View.IMAddrBookItem)rhs);
-        }
+        //public int Compare(Java.Lang.Object lhs, Java.Lang.Object rhs)
+        //{
+        //    return Compare((Com.Zipow.Videobox.View.IMAddrBookItem)lhs, (Com.Zipow.Videobox.View.IMAddrBookItem)rhs);
+        //}
     }
 
 
     public partial class MMZoomGroupComparator
     {
-        public int Compare(Java.Lang.Object lhs, Java.Lang.Object rhs)
-        {
-            return Compare((Com.Zipow.Videobox.View.MM.MMZoomGroup)lhs, (Com.Zipow.Videobox.View.MM.MMZoomGroup)rhs);
-        }
+        //public int Compare(Java.Lang.Object lhs, Java.Lang.Object rhs)
+        //{
+        //    return Compare((Com.Zipow.Videobox.View.MM.MMZoomGroup)lhs, (Com.Zipow.Videobox.View.MM.MMZoomGroup)rhs);
+        //}
     }
 
 
@@ -35,10 +35,10 @@ namespace Com.Zipow.Videobox.View.MM
     {
         public partial class MMSelectSessionListItemComparator
         {
-            public int Compare(Java.Lang.Object lhs, Java.Lang.Object rhs)
-            {
-                return Compare((Com.Zipow.Videobox.View.MM.MMSelectSessionListItem)lhs, (Com.Zipow.Videobox.View.MM.MMSelectSessionListItem)rhs);
-            }
+            //public int Compare(Java.Lang.Object lhs, Java.Lang.Object rhs)
+            //{
+            //    return Compare((Com.Zipow.Videobox.View.MM.MMSelectSessionListItem)lhs, (Com.Zipow.Videobox.View.MM.MMSelectSessionListItem)rhs);
+            //}
         }
     }
 
@@ -71,10 +71,10 @@ namespace Com.Zipow.Videobox.View.MM
     {
         public partial class MMZoomGroupComparator
         {
-            public int Compare(Java.Lang.Object lhs, Java.Lang.Object rhs)
-            {
-                return Compare((Com.Zipow.Videobox.View.MM.MMZoomGroup)lhs, (Com.Zipow.Videobox.View.MM.MMZoomGroup)rhs);
-            }
+            //public int Compare(Java.Lang.Object lhs, Java.Lang.Object rhs)
+            //{
+            //    return Compare((Com.Zipow.Videobox.View.MM.MMZoomGroup)lhs, (Com.Zipow.Videobox.View.MM.MMZoomGroup)rhs);
+            //}
         }
     }
 
@@ -82,10 +82,10 @@ namespace Com.Zipow.Videobox.View.MM
     {
         public partial class SlashCommandItemComparator
         {
-            public int Compare(Java.Lang.Object lhs, Java.Lang.Object rhs)
-            {
-                return Compare((Com.Zipow.Videobox.View.MM.MMSlashCommandPopupView.SlashItem)lhs, (Com.Zipow.Videobox.View.MM.MMSlashCommandPopupView.SlashItem)rhs);
-            }
+            //public int Compare(Java.Lang.Object lhs, Java.Lang.Object rhs)
+            //{
+            //    return Compare((Com.Zipow.Videobox.View.MM.MMSlashCommandPopupView.SlashItem)lhs, (Com.Zipow.Videobox.View.MM.MMSlashCommandPopupView.SlashItem)rhs);
+            //}
         }
     }
 }

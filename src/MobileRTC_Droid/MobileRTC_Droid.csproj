@@ -14,7 +14,7 @@
     <AssemblyName>MobileRTC_Droid</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <Deterministic>True</Deterministic>
-    <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v10.0</TargetFrameworkVersion>
     <AndroidClassParser>class-parse</AndroidClassParser>
     <AndroidCodegenTarget>XAJavaInterop1</AndroidCodegenTarget>
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
@@ -54,9 +54,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Additions\Adapter\ContentFileChatListAdapter.cs" />
-    <Compile Include="Additions\Adapter\PhotoHorizentalAdapter.cs" />
-    <Compile Include="Additions\Adapter\PhotoGridAdapter.cs" />
     <Compile Include="Additions\Adapter\AnnoMultiPageAdapter.cs" />
     <Compile Include="Additions\Adapter\IMDirectoryAdapter.cs" />
     <Compile Include="Additions\MMBuddyItemComparator.cs" />
@@ -71,6 +68,13 @@
     <Compile Include="Additions\Adapter\ContactPBXNumberAdapter.cs" />
     <Compile Include="Additions\Fragment\SelectDialInCountryFragment.cs" />
     <Compile Include="Additions\BOMessageTip.cs" />
+    <Compile Include="Additions\Adapter\PopupDirectoryListAdapter.cs" />
+    <Compile Include="Additions\ZmShareCameraView.cs" />
+    <Compile Include="Additions\ZmAbstractShareControlView.cs" />
+    <Compile Include="Additions\ZmCameraAngleComparator.cs" />
+    <Compile Include="Additions\ZmCameraCharacteristicComparator.cs" />
+    <Compile Include="Additions\ZoomQAQuestion.cs" />
+    <Compile Include="Additions\Adapter\BORoomListAdapter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Jars\AboutJars.txt" />
@@ -92,19 +96,19 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.AndroidX.AppCompat">
-      <Version>1.1.0</Version>
+      <Version>1.3.1.3</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.AndroidX.RecyclerView">
-      <Version>1.1.0</Version>
+      <Version>1.2.1.3</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.AndroidX.ConstraintLayout">
-      <Version>1.1.3</Version>
+      <Version>2.1.1.2</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Google.Android.Material">
-      <Version>1.0.0</Version>
+      <Version>1.4.0.4</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.AndroidX.MultiDex">
-      <Version>2.0.1</Version>
+      <Version>2.0.1.10</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>

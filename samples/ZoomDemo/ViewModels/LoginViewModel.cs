@@ -18,7 +18,7 @@ namespace ZoomDemo.ViewModels
                 zoomService.InitZoomLib(Constants.AppKey, Constants.AppSecret);
 
             LoginWithEmailCommand = new Command(LoginWithEmailAction);
-            ListMeetingCommand = new Command(ListMeetingAction);
+            //ListMeetingCommand = new Command(ListMeetingAction);
         }
 
         public string Email { get; set; }
@@ -38,19 +38,19 @@ namespace ZoomDemo.ViewModels
             //}
         }
 
-        async void ListMeetingAction()
-        {
-            try
-            {
-                var meetingResult = await zoomService.ListMeeting();
-                if (meetingResult != null)
-                {
+        //async void ListMeetingAction()
+        //{
+        //    try
+        //    {
+        //        var meetingResult = await zoomService.ListMeeting();
+        //        if (meetingResult != null)
+        //        {
 
-                }
-            }
-            catch(Exception ex) {
-                Console.WriteLine(ex);
-            }
-        }
+        //        }
+        //    }
+        //    catch(Exception ex) {
+        //        Console.WriteLine(ex);
+        //    }
+        //}
     }
 }

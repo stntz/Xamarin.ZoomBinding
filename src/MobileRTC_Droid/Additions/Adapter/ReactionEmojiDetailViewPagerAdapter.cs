@@ -10,10 +10,10 @@ namespace Com.Zipow.Videobox.View.MM
     {
         public partial class CommentsEmojiCountComparator 
         {
-            public int Compare(Java.Lang.Object lhs, Java.Lang.Object rhs)
-            {
-                return Compare((Com.Zipow.Videobox.View.MM.MMCommentsEmojiCountItem) lhs, (Com.Zipow.Videobox.View.MM.MMCommentsEmojiCountItem) rhs);
-            }
+            //public int Compare(Java.Lang.Object lhs, Java.Lang.Object rhs)
+            //{
+            //    return Compare((Com.Zipow.Videobox.View.MM.MMCommentsEmojiCountItem) lhs, (Com.Zipow.Videobox.View.MM.MMCommentsEmojiCountItem) rhs);
+            //}
         }
     }
 }

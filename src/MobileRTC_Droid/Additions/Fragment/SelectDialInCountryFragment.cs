@@ -5,10 +5,10 @@ namespace Com.Zipow.Videobox.Fragment
     {
         public partial class DialInCountryItemComparator
         {
-            public int Compare(Java.Lang.Object lhs, Java.Lang.Object rhs)
-            {
-                return Compare((Com.Zipow.Videobox.Fragment.SelectDialInCountryFragment.DialInCountry)lhs, (Com.Zipow.Videobox.Fragment.SelectDialInCountryFragment.DialInCountry)rhs);
-            }
+            //public int Compare(Java.Lang.Object lhs, Java.Lang.Object rhs)
+            //{
+            //    return Compare((Com.Zipow.Videobox.Fragment.SelectDialInCountryFragment.DialInCountry)lhs, (Com.Zipow.Videobox.Fragment.SelectDialInCountryFragment.DialInCountry)rhs);
+            //}
         }
     }
 
@@ -28,10 +28,10 @@ namespace Com.Zipow.Videobox.Fragment
     {
         public partial class CallInNumberItemComparator
         {
-            public int Compare(Java.Lang.Object lhs, Java.Lang.Object rhs)
-            {
-                return Compare((Com.Zipow.Videobox.Fragment.SelectCallInNumberFragment.CallInNumberItem)lhs, (Com.Zipow.Videobox.Fragment.SelectCallInNumberFragment.CallInNumberItem)rhs);
-            }
+            //public int Compare(Java.Lang.Object lhs, Java.Lang.Object rhs)
+            //{
+            //    return Compare((Com.Zipow.Videobox.Fragment.SelectCallInNumberFragment.CallInNumberItem)lhs, (Com.Zipow.Videobox.Fragment.SelectCallInNumberFragment.CallInNumberItem)rhs);
+            //}
         }
     }
 
