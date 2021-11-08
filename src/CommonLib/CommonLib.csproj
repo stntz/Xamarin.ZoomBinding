@@ -56,6 +56,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Additions\ConcatAdapter.partial.cs" />
     <Compile Include="Additions\TouchImageView.partial.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Additions\HashMapComparator.cs" />
@@ -75,11 +76,17 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <PackageReference Include="Xamarin.AndroidX.AppCompat">
+      <Version>1.3.1.3</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.AndroidX.Fragment">
       <Version>1.2.4</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.AndroidX.Annotation">
       <Version>1.1.0</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.RecyclerView">
+      <Version>1.2.1.3</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />

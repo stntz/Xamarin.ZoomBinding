@@ -9,10 +9,11 @@
   -->
 
     <!-- Fixes naming clashes -->
-    <attr path="/api/package[@name='us.zoom.androidlib.RecyclerView']/interface[@name='IRecyclerListener']" 
-          name="argsType">RecyclerEventArgs</attr>
-    <attr path="/api/package[@name='us.zoom.androidlib.data']/class[@name='AndroidAppUtil.MimeType']" 
-          name="managedName">NewMimeType</attr>
+    <!--<attr path="/api/package[@name='us.zoom.androidlib.RecyclerView']/interface[@name='IRecyclerListener']" 
+          name="argsType">RecyclerEventArgs</attr>-->
+    <attr path="/api/package[@name='us.zoom.androidlib.RecyclerView']/interface[@name='RecyclerView.RecyclerListener']/method[@name='onViewRecycled' and count(parameter)=1 and parameter[1][@type='us.zoom.androidlib.RecyclerView.RecyclerView.ViewHolder']]"
+          name="eventName"></attr>
+
     <attr path="/api/package[@name='us.zoom.androidlib.utils']/class[@name='ZmMimeTypeUtils.MimeType']/field[@name='mimeType']" 
           name="managedName">NewMimeType</attr>
 
@@ -23,12 +24,25 @@
           name="managedReturn">Java.Lang.Object</attr>
     <attr path="/api/package[@name='us.zoom.androidlib.RecyclerView']/class[@name='ConcatAdapter']/method[@name='onBindViewHolder' and count(parameter)=2 and parameter[1][@type='us.zoom.androidlib.RecyclerView.RecyclerView.ViewHolder'] and parameter[2][@type='int']]" 
           name="managedReturn">Java.Lang.Object</attr>
+    <attr path="/api/package[@name='us.zoom.androidlib.widget.recyclerview']/class[@name='ZMBaseRecyclerViewAdapter']/method[@name='onCreateViewHolder']" 
+          name="managedReturn">Java.Lang.Object</attr>
+
+    <!--Mistakes with virtual/override-->
+    <attr path="/api/package[@name='us.zoom.androidlib.RecyclerView']/class[@name='ConcatAdapter']/method[@name='onBindViewHolder' and count(parameter)=2 and parameter[1][@type='us.zoom.androidlib.RecyclerView.RecyclerView.ViewHolder'] and parameter[2][@type='int']]"
+          name="managedOverride"></attr>
 
     <!--Remove whole classes / methods -->
+    <remove-node path="/api/package[@name='us.zoom.androidlib.RecyclerView']/class[@name='ConcatAdapter']"/>
+    <remove-node path="/api/package[@name='us.zoom.androidlib.widget.recyclerview']/class[@name='ZMBaseRecyclerViewAdapter']/method[@name='onCreateViewHolder' and count(parameter)=2 and parameter[1][@type='android.view.ViewGroup'] and parameter[2][@type='int']]"/>
     <remove-node path="/api/package[@name='us.zoom.androidlib.widget']/class[@name='ZMHorizontalListView']" />
     <remove-node path="/api/package[@name='us.zoom.androidlib.widget.segement']/class[@name='ZMSegmentTabLayout.PointEvaluator']" />
-    <remove-node path="/api/package[@name='us.zoom.androidlib.data']/class[@name='ZMDownloadDiscCacheFile']" />
     <remove-node path="/api/package[@name='us.zoom.androidlib.data']/class[@name='ZMAsyncURLDownloadFile']" />
+    <remove-node path="/api/package[@name='us.zoom.androidlib.material']/class[@name='ZMContextMenuListAdapter']" />
+    <remove-node path="/api/package[@name='us.zoom.androidlib.widget.adapter']/class[@name='ZmSingleChoiceAdapter']" />
 
+    
+    
+
+    
 
 </metadata>
