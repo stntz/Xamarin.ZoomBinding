@@ -8,6 +8,15 @@
   <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
   -->
     
+    <remove-node path="/api/package[@name='com.zipow.videobox.fragment.meeting.qa']/class[@name='ZMQAPanelistViewerAdapter']"/>
+    <remove-node path="/api/package[@name='com.zipow.videobox.view.mm']/class[@name='MMContentFilesAdapter']"/>
+    <remove-node path="/api/package[@name='com.zipow.videobox.view.mm.message']/class[@name='ReactionContextMenuListAdapter']"/>
+    <remove-node path="/api/package[@name='com.zipow.videobox.view.mm']/class[@name='MMContentImagesAdapter']"/>
+    <remove-node path="/api/package[@name='com.zipow.videobox.view.mm']/class[@name='ReactionEmojiDetailListAdapter']"/>
+    <remove-node path="/api/package[@name='com.zipow.videobox.view.mm.sticker']/class[@name='CommonEmojiAdapter']"/>
+    <remove-node path="/api/package[@name='com.zipow.videobox.view.sip']/class[@name='SipInCallPanelAdapter']"/>
+    <remove-node path="/api/package[@name='com.zipow.videobox.view.sip']/class[@name='SharedLineAdapter']"/>
+    <remove-node path="/api/package[@name='com.zipow.videobox.fragment.meeting.qa']/class[@name='ZMQAAttendeeViewerAdapter']" />
     <remove-node path="/api/package[@name='us.google.protobuf']/class[@name='LazyStringArrayList']"/>
     <remove-node path="/api/package[@name='us.google.protobuf']/class[@name='UnmodifiableLazyStringList']"/>
     <remove-node path="/api/package[@name='us.google.protobuf']/class[@name='GeneratedMessageLite']"/>
