@@ -3,6 +3,9 @@ using Android.Runtime;
 using Java.Lang;
 using Java.Util;
 using US.Zoom.Androidlib.Widget;
+using Object = Java.Lang.Object;
+
+
 
 namespace Com.Zipow.Videobox.View.MM
 {
@@ -29,29 +32,29 @@ namespace Com.Zipow.Videobox.View.MM
         }
     }
 
-    public partial class MMAddBuddySearchAdapter
-    {
-        public override unsafe void OnBindViewHolder(global::AndroidX.RecyclerView.Widget.RecyclerView.ViewHolder holder, int position)
-        {
-            OnBindViewHolder((Com.Zipow.Videobox.View.MM.MMAddBuddySearchAdapter.ViewHolder) holder, position);
-        }
-    }
+    //public partial class MMAddBuddySearchAdapter
+    //{
+    //    public override unsafe void OnBindViewHolder(global::AndroidX.RecyclerView.Widget.RecyclerView.ViewHolder holder, int position)
+    //    {
+    //        OnBindViewHolder((Com.Zipow.Videobox.View.MM.MMAddBuddySearchAdapter.ViewHolder) holder, position);
+    //    }
+    //}
 
-    public partial class MMSessionMembersListAdapter
-    {
-        public override unsafe void OnBindViewHolder(global::AndroidX.RecyclerView.Widget.RecyclerView.ViewHolder holder, int position)
-        {
-            OnBindViewHolder((Com.Zipow.Videobox.View.MM.MMSessionMembersListAdapter.MMSessionMembersListHolder) holder, position);
-        }
-    }
+    //public partial class MMSessionMembersListAdapter
+    //{
+    //    public override unsafe void OnBindViewHolder(global::AndroidX.RecyclerView.Widget.RecyclerView.ViewHolder holder, int position)
+    //    {
+    //        OnBindViewHolder((Com.Zipow.Videobox.View.MM.MMSessionMembersListAdapter.MMSessionMembersListHolder) holder, position);
+    //    }
+    //}
 
 
-    public partial class MMThreadsAdapter
-    {
-        public override unsafe void OnBindViewHolder(global::AndroidX.RecyclerView.Widget.RecyclerView.ViewHolder holder, int position)
-        {
-            OnBindViewHolder((Com.Zipow.Videobox.View.MM.MMThreadsAdapter.CommentHolder)holder, position);
-        }
-    }
+    //public partial class MMThreadsAdapter
+    //{
+    //    public override unsafe void OnBindViewHolder(global::AndroidX.RecyclerView.Widget.RecyclerView.ViewHolder holder, int position)
+    //    {
+    //        OnBindViewHolder((Com.Zipow.Videobox.View.MM.MMThreadsAdapter.CommentHolder)holder, position);
+    //    }
+    //}
 
 }

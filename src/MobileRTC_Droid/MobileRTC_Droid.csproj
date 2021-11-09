@@ -53,6 +53,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Additions\Adapter\AbstractAdapter.cs" />
+    <Compile Include="Additions\Adapter\CameraAdapter.cs" />
+    <Compile Include="Additions\Adapter\ZoomQAQuestion.partial.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Additions\Adapter\ContentFileChatListAdapter.cs" />
     <Compile Include="Additions\Adapter\PhotoHorizentalAdapter.cs" />
@@ -63,7 +66,6 @@
     <Compile Include="Additions\Adapter\MMChatsListAdapter.cs" />
     <Compile Include="Additions\PListItemNewComparator.cs" />
     <Compile Include="Additions\Adapter\MMContactsRoomAdapter.cs" />
-    <Compile Include="Additions\Adapter\ReactionEmojiDetailViewPagerAdapter.cs" />
     <Compile Include="Additions\ConfChatAttendeeItem.cs" />
     <Compile Include="Additions\StickerManager.cs" />
     <Compile Include="Additions\ReactionLabelsView.cs" />
