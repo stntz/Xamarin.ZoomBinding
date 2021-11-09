@@ -102,4 +102,6 @@
     <attr path="/api/package[@name='com.zipow.videobox.view']/class[@name='MoreTip']/method[@name='onSelectMeetingReaction' and count(parameter)=1 and parameter[1][@type='java.lang.String']]" name="managedName">OnSelectMeetingReaction2</attr>
     <attr path="/api/package[@name='com.zipow.videobox.fragment']/class[@name='IMSessionSearchFragment']/method[@name='onZoomFileClick' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.util.List&lt;java.lang.String&gt;']]" name="managedName">OnZoomFileClick2</attr>
     <attr path="/api/package[@name='com.zipow.videobox.view.mm']/class[@name='MMSessionContentsFragment']/method[@name='onZoomFileClick' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.util.List&lt;java.lang.String&gt;']]" name="managedName">OnZoomFileClick2</attr>
+
+    <attr path="/api/package[@name='us.google.protobuf']/class[@name='ByteString']/method[@name='iterator' and count(parameter)=0]" name="managedReturn">Java.Util.IIterator</attr>
 </metadata>
