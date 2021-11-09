@@ -115,5 +115,8 @@
     <remove-node path="/api/package[@name='com.zipow.videobox.view.sip']" />
 
     <attr path="/api/package[@name='us.zoom.sdk']/class[@name='MinMeetingView']/method[@name='getVideoViewMgr' and count(parameter)=0]" name="visibility">protected</attr>
-    
+
+	<remove-node path="/api/package[@name='us.zoom.sdk']/interface[@name='ZoomUIService']/method[@name='setZoomUIDelegate']"/>
+
+
 </metadata>
