@@ -18,7 +18,8 @@
     <AndroidClassParser>class-parse</AndroidClassParser>
     <AndroidCodegenTarget>XAJavaInterop1</AndroidCodegenTarget>
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
-    <JavaMaximumHeapSize></JavaMaximumHeapSize>
+    <JavaMaximumHeapSize>
+    </JavaMaximumHeapSize>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -28,12 +29,18 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <MandroidI18n></MandroidI18n>
-    <AndroidHttpClientHandlerType></AndroidHttpClientHandlerType>
-    <JavaMaximumHeapSize></JavaMaximumHeapSize>
-    <MandroidI18n></MandroidI18n>
-    <AndroidHttpClientHandlerType></AndroidHttpClientHandlerType>
-    <JavaMaximumHeapSize></JavaMaximumHeapSize>
+    <MandroidI18n>
+    </MandroidI18n>
+    <AndroidHttpClientHandlerType>
+    </AndroidHttpClientHandlerType>
+    <JavaMaximumHeapSize>
+    </JavaMaximumHeapSize>
+    <MandroidI18n>
+    </MandroidI18n>
+    <AndroidHttpClientHandlerType>
+    </AndroidHttpClientHandlerType>
+    <JavaMaximumHeapSize>
+    </JavaMaximumHeapSize>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>portable</DebugType>
@@ -49,9 +56,9 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Additions\ZmMutableLiveDataComparator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Additions\HashMapComparator.cs" />
-    <Compile Include="Additions\ResolbeInfoComparator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Jars\AboutJars.txt" />
@@ -65,15 +72,34 @@
   <ItemGroup>
     <LibraryProjectZip Include="Jars\commonlib.aar" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Additions\" />
-  </ItemGroup>
-  <ItemGroup>
+    <PackageReference Include="Com.Airbnb.Xamarin.Forms.Lottie">
+      <Version>4.0.11</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Core.Core.Ktx">
+      <Version>1.6.0.3</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.AndroidX.Fragment">
       <Version>1.3.6.3</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.AndroidX.Annotation">
       <Version>1.2.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Lifecycle.ViewModel">
+      <Version>2.3.1.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Lifecycle.ViewModel.Ktx">
+      <Version>2.3.1.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Window">
+      <Version>1.0.0.3-beta02</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Window.WindowJava">
+      <Version>1.0.0.3-beta02</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Kotlin.StdLib">
+      <Version>1.5.31.2</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
