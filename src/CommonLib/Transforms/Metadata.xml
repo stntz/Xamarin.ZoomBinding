@@ -35,22 +35,19 @@
 		name="managedName">
 		TabletTargetContainerNew
 	</attr>
-	<attr
-		path="/api/package[@name='us.zoom.androidlib.widget.recyclerview.provider.node']/class[@name='ZMBaseNodeAdapter']/method[@name='addData' and count(parameter)=1 and parameter[1][@type='java.util.Collection&lt;? extends us.zoom.androidlib.widget.recyclerview.provider.node.ZMBaseNode&gt;']]"
-		name="managedOverride">
-		virtual
-	</attr>
-	<attr
-		path="/api/package[@name='us.zoom.androidlib.widget.recyclerview.provider.node']/class[@name='ZMBaseNodeAdapter']/method[@name='onCreateViewHolder']"
-		name="managedReturn">
-		Java.Lang.Object
+	<attr path="/api/package[@name='us.zoom.androidlib.widget.recyclerview.provider.node']/class[@name='ZMBaseNodeAdapter']/method[@name='addData']" name="managedOverride">virtual
+
 	</attr>
 	<attr
 		path="/api/package[@name='us.zoom.androidlib.widget.recyclerview.provider.node']/class[@name='ZMBaseNodeAdapter']/method[@name='setNewData' and count(parameter)=1 and parameter[1][@type='java.util.List&lt;us.zoom.androidlib.widget.recyclerview.provider.node.ZMBaseNode&gt;']]"
 		name="managedOverride">
 		virtual
 	</attr>
-
+	<attr
+		path="/api/package[@name='us.zoom.androidlib.widget.recyclerview.provider.node']/class[@name='ZMBaseNodeAdapterInvoker']/method[@name='onCreateViewHolder']"
+		name="managedReturn">
+		Java.Lang.Object
+	</attr>
 	<attr
 		path="/api/package[@name='us.zoom.androidlib.material']/class[@name='ZMContextMenuListAdapter']/method[@name='onBindViewHolder']"
 		name="managedOverride">
@@ -81,11 +78,13 @@
 		name="managedOverride">
 		override
 	</attr>
-	<attr path="/api/package[@name='us.zoom.androidlib.widget.adapter']/class[@name='ZmSingleChoiceAdapter']/method[@name='onCreateViewHolder' and count(parameter)=2 and parameter[1][@type='android.view.ViewGroup'] and parameter[2][@type='int']]"
+	<attr path="/api/package[@name='us.zoom.androidlib.widget.adapter']/class[@name='ZmSingleChoiceAdapter']/method[@name='onCreateViewHolder']"
 	      name="managedReturn">
 		AndroidX.RecyclerView.Widget.RecyclerView.ViewHolder
 	</attr>
-
+	<attr path="/api/package[@name='us.zoom.androidlib.widget.recyclerview.provider']/class[@name='ZMBaseMultiProviderAdapter']/method[@name='onCreateViewHolder']" name="managedOverride">override</attr>
+	<attr path="/api/package[@name='us.zoom.androidlib.widget.recyclerview.provider']/class[@name='ZMBaseMultiProviderAdapter']/method[@name='onCreateViewHolder']"
+	      name="managedReturn">AndroidX.RecyclerView.Widget.RecyclerView.ViewHolder</attr>
 	<attr
 		path="/api/package[@name='us.zoom.androidlib.widget.recyclerview.provider']/class[@name='ZMBaseMultiProviderAdapter']/method[@name='onCreateViewHolder']"
 		name="managedReturn">
