@@ -53,6 +53,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Additions\ZmShareCameraView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Additions\Adapter\AnnoMultiPageAdapter.cs" />
     <Compile Include="Additions\Adapter\IMDirectoryAdapter.cs" />
@@ -61,15 +62,11 @@
     <Compile Include="Additions\PListItemNewComparator.cs" />
     <Compile Include="Additions\Adapter\MMContactsRoomAdapter.cs" />
     <Compile Include="Additions\Adapter\ReactionEmojiDetailViewPagerAdapter.cs" />
-    <Compile Include="Additions\ConfChatAttendeeItem.cs" />
     <Compile Include="Additions\StickerManager.cs" />
     <Compile Include="Additions\ReactionLabelsView.cs" />
     <Compile Include="Additions\ABContactsCache.cs" />
     <Compile Include="Additions\Adapter\ContactPBXNumberAdapter.cs" />
-    <Compile Include="Additions\Fragment\SelectDialInCountryFragment.cs" />
-    <Compile Include="Additions\BOMessageTip.cs" />
     <Compile Include="Additions\Adapter\PopupDirectoryListAdapter.cs" />
-    <Compile Include="Additions\ZmShareCameraView.cs" />
     <Compile Include="Additions\ZmAbstractShareControlView.cs" />
     <Compile Include="Additions\ZmCameraAngleComparator.cs" />
     <Compile Include="Additions\ZmCameraCharacteristicComparator.cs" />
