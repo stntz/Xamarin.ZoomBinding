@@ -90,11 +90,13 @@
 		name="managedReturn">
 		Java.Lang.Object
 	</attr>
+	<attr path="/api/package[@name='us.zoom.androidlib.widget.recyclerview.provider']/class[@name='ZMBaseMultiProviderAdapter']/method[@name='convert']" name="managedOverride">virtual</attr>
+	<attr path="/api/package[@name='us.zoom.androidlib.widget.recyclerview.provider']/class[@name='ZMBaseMultiProviderAdapter']/method[@name='onViewAttachedToWindow']" name="managedOverride">virtual</attr>
 	<attr
 		path="/api/package[@name='us.zoom.androidlib.material']/class[@name='ZMContextMenuListAdapter']/method[@name='onBindViewHolder' and count(parameter)=2 and parameter[1][@type='us.zoom.androidlib.widget.pinnedsectionrecyclerview.BaseRecyclerViewAdapter.BaseViewHolder'] and parameter[2][@type='int']]/parameter[1]"
 		name="managedType">AndroidX.RecyclerView.Widget.RecyclerView.ViewHolder</attr>
 	<attr path="/api/package[@name='us.zoom.androidlib.material']/class[@name='ZMContextMenuListAdapter']/method[@name='onCreateViewHolder' and count(parameter)=2 and parameter[1][@type='android.view.ViewGroup'] and parameter[2][@type='int']]" name="managedReturn">AndroidX.RecyclerView.Widget.RecyclerView.ViewHolder</attr>
-	<attr path="/api/package[@name='us.zoom.androidlib.widget.recyclerview.provider']/class[@name='ZMBaseMultiProviderAdapter']/method[@name='convert']" name="managedOverride">virtual</attr>
+
 	<remove-node path="/api/package[@name='us.zoom.androidlib.widget.recyclerview']/class[@name='ZMBaseRecyclerViewAdapter']/method[@name='onCreateViewHolder']"></remove-node>
 	
 
