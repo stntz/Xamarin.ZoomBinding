@@ -13,7 +13,7 @@ namespace ZoomDemo.Droid.Platform
 {
     public class ZoomService : Java.Lang.Object, IZoomService, IZoomSDKInitializeListener //, IPreMeetingServiceListener
     {
-        ZoomSDK zoomSDK;
+        US.Zoom.Sdk.ZoomSDK zoomSDK;
         static TaskCompletionSource<object> meetingListSource;
         public void InitZoomLib(string appKey, string appSecret)
         {
@@ -73,12 +73,13 @@ namespace ZoomDemo.Droid.Platform
 
         public bool LoginToZoom(string email, string password, bool rememberMe = true)
         {
-            if (IsInitialized())
-            {
-                var loginInt = zoomSDK.LoginWithZoom(email, password);
-                return loginInt == 0;
-            }
-            return false;
+            throw new NotImplementedException("LoginWithZoom seems to have been removed from the zoom sdk");
+            //if (IsInitialized())
+            //{
+            //    var loginInt = zoomSDK.LoginWithZoom(email, password);
+            //    return loginInt == 0;
+            //}
+            //return false;
         }
 
         public void OnDeleteMeeting(int p0)
