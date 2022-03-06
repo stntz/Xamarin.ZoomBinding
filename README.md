@@ -24,3 +24,25 @@ Please go through the zoom forum and documentation before raising issues.
 Sample Docs 
 A Crossplatform plugin is in the works to abstract commonly used functions.
 
+# Android Binding Tips
+
+Sometimes resource files in the zoom sdk require editing to correct errors. A common error is that zoom will include multiple placeholders in resource strings without specifying positional syntax. For example multple instances of $s or $d or both in a single string. 
+
+For example
+
+ <item quantity="other">%s, %d users added this reaction</item>
+
+ should be
+
+<item quantity="one">%1$s, %2$d user added this reaction</item>
+
+In cases where you need to make changes to resource files, the zoom sdk file will need to be recompiled.
+
+Instructions for recompiling: 
+
+1. Find mobilertc.aar or commonlib.aar
+2. Change the extension to .zip
+3. Unzip to a temp folder in a cmd prompt with  ```unzip mobilertc.aar -d tempFolder``` (requires unzip.exe)
+4. Recompile tempFolder in a cmd prompt with the command ```jar cvf myNewLib.aar -C tempFolder/ .```  (requires jar in path variable)
+5. Rename myNewLib.aar to mobilertx.aar and put it back in the Jars folder of the binding project
+
